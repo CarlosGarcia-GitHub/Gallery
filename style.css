@@ -1,5 +1,45 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e7d2cc;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 600px;
+  height: 430px;
+  position: relative;
+  top: 150px;
+}
+
+.gallery img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 500ms ease;
+}
+
+.gallery img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+  margin-bottom: 20px;
 }
